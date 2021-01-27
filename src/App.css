@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  /* text-align: center; */
+  margin:0;
+  padding:0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   }
+.App{
+  width: 100vw;
+}
+.container{
+  background:url(http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg) ;
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.info-div{
+  background-image:linear-gradient(to right,black,transparent);
+  width: 100%;
+  height: 100vh;
+}
+.welcome-note{
+  padding:30vh;
+  padding-left: 40px;
+}
+.info-div .heading-one{
+  font-size: 70px;
+  font-weight: 900;
   color: white;
 }
+.heading-two{
+  padding: 5px;
+  font-size:20px;
+  color: white;
+  display: block;
+}
+.enter-button{
+  padding:10px 40px;
+  margin: 10px;
+  font-size:15px;
+  font-weight: 500;
+  background-color:#D81F26;
+  color: white;
+  border: none;
+  border-radius:3px;
+}
+.enter-button:hover{
+  cursor: pointer;
+}
+.enter-button:focus{
+  outline:none;
+  background-color:#720206;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* NAV */
+nav{
+  height:70px;
+  background-image:linear-gradient(to right,black,black,transparent);
+  width:100vw;
+  position: fixed;
+  justify-content: space-between;
+  display: inline-flex;
+  padding-left: 25px;
+}
+
+nav .search{
+  padding: 5px;
+  margin:10px;
+  width:20vw;
+  display:block;
+  border-bottom: 3px solid #D81F26;
+}
+nav input{
+  border: none;
+  padding:8px;
+  font-size:2vw;
+  color: white;
+  background-color:transparent;
+}
+input::placeholder{
+  color:rgba(240, 248, 255, 0.39);
+  font-size: 1.3vw;
+}
+input:focus{
+  outline:none;
+}
+nav img{
+  /* padding:5px; */
+  width:6vw;
+}
+nav ul{
+  display: inline-flex;
+  /* float: left; */
+  color:rgb(179, 175, 175);
+  /* text-decoration: none; */
+}
+nav ul li{
+  list-style: none;
+  font-size: 1.3vw;
+  padding:1vw;
+  padding-top: 4vh;
+}
+nav ul li:hover{
+  cursor: pointer;
+  color: white;
+}
+.profile-div{
+  margin-right: 50px;
+}
+.profile-div img{
+  margin-top: 10px;
+  width: 40px;
+}
+.profile-div img:hover{
+  cursor: pointer;
+}
+/* @media (max-width: 768px){
+ nav ul{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+} */
+
+@media (max-width:768px){
+  nav{
+    justify-content: space-between;
   }
 }
