@@ -115,11 +115,6 @@ nav ul li:hover{
 .profile-div img:hover{
   cursor: pointer;
 }
-/* @media (max-width: 768px){
- nav ul{
-    display: none;
-  }
-} */
 
 @media (max-width:768px){
   nav{
